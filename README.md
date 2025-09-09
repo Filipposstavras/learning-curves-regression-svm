@@ -21,5 +21,33 @@ This project explores **bias–variance tradeoffs** and **Support Vector Machine
 
 ## How to Run
 Install dependencies:
-```bash
-pip install -r requirements.txt
+Run the script:
+
+python regression_and_svm.py
+
+
+Open the notebook for detailed steps and plots:
+
+jupyter notebook regression_and_svm.ipynb
+
+Results
+
+Regression:
+
+Linear Regression → consistent but high error (underfitting)
+
+Polynomial Regression (deg=50) → severe overfitting
+
+Ridge Regression → best performance, balanced training/validation error
+
+SVM:
+
+Linear SVM → decision boundaries shift with C, number of support vectors changes
+
+RBF SVM (Grid Search) → best parameters: C=10, γ=1 with F1 ≈ 0.96
+
+Dataset Sources
+
+Synthetic sinusoidal data (generated)
+
+Breast Cancer Dataset — scikit-learn
